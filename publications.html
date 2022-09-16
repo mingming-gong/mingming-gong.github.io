@@ -1,15 +1,52 @@
 
-
 <html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="shortcut icon" href="paper_dragon.ico">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Mingming Gong</title>
-    <base href="https://mingming-gong.github.io/publications.html">
+    <!-- <link rel="shortcut icon" href="paper_dragon.ico"> -->
+    <title>Mingming Gong's Publications</title>
+    <!-- <base href="./index.html"> -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <script type="text/javascript">
+
+     $(function() {
+        document.getElementById("load_years").onclick = function() {
+            $("#includedContent").load("years.html"); 
+        };
+      });
+
+     $(function() {
+        document.getElementById("load_topics").onclick = function() {
+            $("#includedContent").load("topics.html"); 
+        };
+      });
+
+     // $(function() {
+     //    document.getElementById("load_venues").onclick = function() {
+     //        $("#includedContent").load("venues.html"); 
+     //    };
+     //  });
+
+     // $(function() {
+     //    document.getElementById("load_top").onclick = function() {
+     //        $("#includedContent").load("top.html"); 
+     //    };
+     //  });
+
+
+      $("document").ready(function() {
+            $("#includedContent").load("years.html"); 
+        }); 
+    </script>
+
 </head>
 
 <body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
 <h1 style="padding-left: 0.5em">Mingming Gong</h1><hr>
 <table summary="Table for page layout." id="tlayout">
 <tr valign="top">
@@ -24,392 +61,31 @@
     <div class="menu-item"><a href="service.html">Service</a></div>
 </td>
 <td id="layout-content">
-    <h1 style="margin-top: 0em">Selected Publications</h1>
+
+    <h1 style="margin-top: 0em">Publications</h1><br>
+  <!--  <p>[ <a href="#news">News</a>,
+        <a href="#interest">Research Interests</a>,
+        <a href="#job">Job Experience</a>,
+        <a href="#edu">Education</a> ]</p>-->
+
+ 
 <div>
-    <h2><hr><a name="conference"></a>Conference (* Equal Contribution)</h2>
-    <ol reversed>
-         <li><p>
-        Uncertainty Quantification in Depth Estimation via Constrained Ordinal Regression. [<A >PDF</A>] <br>
-        D. Hu, L. Peng, T. Chu, X. Zhang, Y. Mao, H. Bondell, and <b>M. Gong.</b><br>
-        In <a href="https://eccv2022.ecva.net/"> ECCV</a>, 2022.
-        </p></li>
-         <li><p>
-        Digging into Radiance Grid for Real-Time View Synthesis with Detail Preservation. [<A >PDF</A>] <br>
-        J. Zhang, J. Huang, Huan Fu, <b>M. Gong</b>, C. Wang, B. Cai, J. Wang, H. Luo, R. Jia, B. Zhao, and X. Tang.<br>
-        In <a href="https://eccv2022.ecva.net/"> ECCV</a>, 2022.
-        </p></li>
-         <li><p>
-        Adversarial Consistency for Single Domain Generalization in Medical Image Segmentation. [<A HREF="https://arxiv.org/pdf/2206.13737.pdf" >PDF</A>] <br>
-        Y. Xu, S. Xie, M. Reynolds, M. Ragoza, <b>M. Gong*</b>, K. Batmanghelich*.<br>
-        In <a href="https://conferences.miccai.org/2022/en/"> MICCAI</a>, 2022.
-        </p></li>
-         <li><p>
-        Understanding Robust Overfitting of Adversarial Training and Beyond. [<A HREF="" >PDF</A>] <br>
-        C. Yu, B. Han, L. Shen, J. Yu, C. Gong, <b>M. Gong</b>, and T. Liu.<br>
-        In <a href="https://icml.cc/Conferences/2022"> ICML</a>, 2022.
-        </p></li>
-        <li><p>
-        Sample-Efficient Kernel Mean Estimator with Marginalized Corrupted Data. [<A HREF="https://arxiv.org/pdf/2107.04855.pdf" >PDF</A>] <br>
-        X. Xia*, S. Shan*, <b>M. Gong</b>, N. Wang, F. Gao, H. Wei, and T. Liu.<br>
-        In <a href="https://kdd.org/kdd2022"> KDD</a>, 2022.
-        </p></li>
-        <li><p>
-        Robust Weight Perturbation for Adversarial Training. [<A >PDF</A>] [<A HREF="https://github.com/ChaojianYu/Robust-Weight-Perturbation">CODE</A>] <br>
-        C. Yu, B. Han, <b>M. Gong</b>, L. Shen, S. Ge, B. Du, and T. Liu.<br>
-        In <a href="https://ijcai-22.org/"> IJCAI</a>, 2022.
-        </p></li>
-        <li><p>
-        MP2: A Momentum Contrast Approach for Recommendation with Pointwise and Pairwise Learning. [<A HREF="https://arxiv.org/pdf/2204.08326.pdf" >PDF</A>] <br>
-        M. Wang, Y. Guo, Z. Zhao, G. Hu, Y. Shen, <b>M. Gong</b>, P. Torr.<br>
-        In <a href="https://sigir.org/sigir2022/"> SIGIR</a>, 2022.
-        </p></li>
-        <li><p>
-        Alleviating Semantics Distortion in Unsupervised Low-Level Image-to-Image Translation via Structure Consistency Constraint. [<A >PDF</A>] [<A >CODE</A>] <br>
-        J. Guo, J. Li, H. Fu, <b>M. Gong</b>, K. Zhang, D. Tao.<br>
-        In <a href="http://cvpr2022.thecvf.com/"> CVPR</a>, 2022.
-        </p></li>
-        <li><p>
-        Maximum Spatial Perturbation Consistency for Unpaired Image-to-Image Translation. [<A >PDF</A>] [<A >CODE</A>] <br>
-        Y. Xu, S. Xie, W. Wu, K. Zhang, <b>M. Gong*</b>, K. Batmanghelich*.<br>
-        In <a href="http://cvpr2022.thecvf.com/"> CVPR</a>, 2022.
-        </p></li>
-        <li><p>
-        Few-Shot Font Generation by Learning Fine-Grained Local Styles. [<A >PDF</A>] [<A >CODE</A>] <br>
-        L. Tang, Y. Cai, J. Liu, Z. Hong, <b>M. Gong</b>, M. Fan, J. Han, J. L, E. Ding, J. Wang.<br>
-        In <a href="http://cvpr2022.thecvf.com/"> CVPR</a>, 2022.
-        </p></li>
-        <li><p>
-        CRIS: CLIP-Driven Referring Image Segmentation. [<A >PDF</A>] [<A >CODE</A>] <br>
-        Z. Wang, Y. Lu, Q. Li, X. Tao, Y. Guo, <b>M. Gong</b>, and T. Liu.<br>
-        In <a href="http://cvpr2022.thecvf.com/"> CVPR</a>, 2022.
-        </p></li>
-        <li><p>
-        Exploring Set Similarity for Dense Self-supervised Representation Learning. [<A >PDF</A>] [<A >CODE</A>] <br>
-        Z. Wang, Q. Li, G. Zhang, P. Wan, W. Zheng, N. Wang, <b>M. Gong</b>, and T. Liu.<br>
-        In <a href="http://cvpr2022.thecvf.com/"> CVPR</a>, 2022.
-        </p></li>
-        <li><p>
-        Fair Classification with Instance-dependent Label Noise. [<A HREF="https://openreview.net/forum?id=s-pcpETLpY">PDF</A>] <br>
-        S. Wu, <b>M. Gong</b>, B. Han, Y. Liu, T. Liu.<br>
-        In <a href="https://cclear.cc/"> CLeaR</a>, 2022.
-        </p></li>
-        <li><p>
-        A Relational Intervention Approach for Unsupervised Dynamics Generalization in Model-Based Reinforcement Learning. [<A HREF="https://openreview.net/forum?id=YRq0ZUnzKoZ">PDF</A>] <br>
-        J. Guo, <b>M. Gong</b>, D. Tao.<br>
-        In <a href="https://iclr.cc/"> ICLR</a>, 2022.
-        </p></li>
-        <li><p>
-        Rethinking Class-Prior Estimation for Positive-Unlabeled Learning. [<A HREF="https://openreview.net/forum?id=aYAA-XHKyk&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2022%2FConference%2FAuthors%23your-submissions)">PDF</A>] [<A >CODE</A>] <br>
-        Y. Yao, T. Liu, B. Han, <b>M. Gong</b>, G. Niu, M. Sugiyama, and D. Tao.<br>
-        In <a href="https://iclr.cc/"> ICLR</a>, 2022.
-        </p></li>
-        <li><p>
-        Adversarial Robustness Through the Lens of Causality. [<A HREF="https://openreview.net/forum?id=cZAi1yWpiXQ&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2022%2FConference%2FAuthors%23your-submissions)">PDF</A>] [<A >CODE</A>] <br>
-        Y. Zhang, <b>M. Gong</b>, T. Liu, G. Niu, X. Tian, B. Han, B. Schölkopf, and K. Zhang.<br>
-        In <a href="https://iclr.cc/"> ICLR</a>, 2022.
-        </p></li>
-        <li><p>
-        Sample Selection with Uncertainty of Losses for Learning with Noisy Labels. [<A HREF="https://openreview.net/forum?id=xENf4QUL4LW&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2022%2FConference%2FAuthors%23your-submissions)">PDF</A>] [<A >CODE</A>] <br>
-        X. Xia, T. Liu, B. Han, <b>M. Gong</b>, J. Yu, G. Niu, and M. Sugiyama.<br>
-        In <a href="https://iclr.cc/"> ICLR</a>, 2022.
-        </p></li>
-        <li><p>
-        Domain Adaptation with Invariant Representation Learning: What Transformations to Learn?. [<A HREF="https://openreview.net/forum?id=zdmF437BCB">PDF</A>] [<a href="https://github.com/DMIRLAB-Group/DSAN">CODE</a>]<br>
-        P. Stojanov, Z. Li, <b>M. Gong</b>, R. Cai,  J.G. Carbonell, and K. Zhang.<br>
-        In <a href="https://nips.cc/"> NeurIPS</a>, 2021.
-        </p></li>
-        <li><p>
-        Instance-dependent Label-noise Learning under a Structural Causal Model. [<A HREF="https://arxiv.org/abs/2109.02986">PDF</A>] [<a href="https://github.com/a5507203/IDLN">CODE</a>]<br>
-        Y. Yao, T. Liu, <b>M. Gong</b>, B. Han, G. Niu, and K. Zhang.<br>
-        In <a href="https://nips.cc/"> NeurIPS</a>, 2021. 
-        </p></li>
-       <li><p>
-       Unaligned Image-to-Image Translation by Learning to Reweight. [<A HREF="https://arxiv.org/abs/2109.11736">PDF</A>] [<a href="https://github.com/Mid-Push/IrwGAN">CODE</a>]<br>
-       S. Xie, <b>M. Gong</b>, Y. Xu, and K. Zhang.<br>
-       In <a href="http://iccv2021.thecvf.com/"> ICCV</a>, 2021.
-       </p></li>           
-       <li><p>
-       Not All Operations Contribute Equally: Hierarchical Operation-adaptive Predictor for Neural Architecture Search. [<A HREF="https://openaccess.thecvf.com/content/ICCV2021/papers/Chen_Not_All_Operations_Contribute_Equally_Hierarchical_Operation-Adaptive_Predictor_for_Neural_ICCV_2021_paper.pdf">PDF</A>]<br>
-       Z. Chen, Y. Zhan, B. Yu, <b>M. Gong*</b>, and B. Du*.<br>
-       In <a href="http://iccv2021.thecvf.com/"> ICCV</a>, 2021.
-       </p></li>       
-       <li><p>
-       Class2Simi: A Noise Reduction Perspective on Learning with Noisy Labels [<A HREF="http://proceedings.mlr.press/v139/wu21f/wu21f.pdf">PDF</A>] [<A HREF="https://github.com/scifancier/Class2Simi">CODE</A>]<br>
-       S. Wu*, X. Xia*, T. Liu, B. Han, <b>M. Gong</b>, N. Wang, H. Liu, and G. Niu. <br>
-       In <a href="https://icml.cc/Conferences/2021"> ICML</a>, 2021.
-       </p></li>
-       <li><p>
-       Learning with Group Noise. [<A HREF="https://arxiv.org/abs/2103.09468">PDF</A>][<A HREF="https://github.com/QizhouWang/Max-Matching">CODE</A>]<br>
-       Q. Wang, J. Yao, C. Gong, T. Liu, <b>M. Gong</b>, H. Yang, and B. Han.<br>
-       In <a href="https://aaai.org/Conferences/AAAI-21/"> AAAI</a>, 2021.
-       </p></li>
-       <li><p>
-        Domain Adaptation As a Problem of Inference on Graphical Models. [<A HREF="https://arxiv.org/abs/2002.03278">PDF</A>][<A HREF="https://github.com/mgong2/DA_Infer">CODE</A>]<br>
-        K. Zhang*, <b>M. Gong*</b>, P. Stojanov, B. Huang, Qingsong Liu, and C. Glymour.<br>
-        In <a href="https://nips.cc/">NeurIPS</a></i>, 2020.
-       </p></li>
-        <li><p>
-        Domain Generalization via Entropy Regularization. [<A HREF="https://papers.nips.cc/paper/2020/file/b98249b38337c5088bbc660d8f872d6a-Paper.pdf">PDF</A>][<A HREF="https://github.com/sshan-zhao/DG_via_ER">CODE</A>]<br>
-        S. Zhao, <b>M. Gong</b>, T. Liu,  H. Fu, and D. Tao.<br>
-        In <a href="https://nips.cc/"> NeurIPS</a>, 2020.
-        </p></li>  
-        <li><p>
-        Parts-dependent Label Noise: Towards Instance-dependent Label Noise. [<A HREF="https://arxiv.org/abs/2006.07836">PDF</A>][<A HREF="https://github.com/xiaoboxia/Part-dependent-label-noise">CODE</A>]<br>
-        X. Xia, T. Liu, B. Han, N. Wang, <b>M. Gong</b>, H. Liu, G. Niu, D. Tao, and M. Sugiyama.<br>
-        In <a href="https://nips.cc/"> NeurIPS</a>, 2020. (<font color="red">Spotlight</font>)
-        </p></li>    
-        <li><p>
-        Dual T: Reducing Estimation Error for Transition Matrix in Label-noise Learning. [<A HREF="https://arxiv.org/abs/2006.07805">PDF</A>][<A HREF="https://github.com/a5507203/dual-T-Estimator">CODE</A>]<br>
-        Y. Yao, T. Liu,  B. Han, <b>M. Gong</b>, J. Deng, G. Niu, and M. Sugiyama.<br>
-        In <a href="https://nips.cc/"> NeurIPS</a>, 2020.
-        </p></li>
-        <li><p>
-        Hard Example Generation by Texture Synthesis for Cross-domain Shape Similarity Learning. [<A HREF="https://proceedings.neurips.cc/paper/2020/hash/a87d27f712df362cd22c7a8ef823e987-Abstract.html">PDF</A>][<A HREF="https://github.com/3D-FRONT-FUTURE/IBSR-texture">CODE</A>]<br>
-        H. Fu*, S. Li*, R. Jia, <b>M. Gong</b>, B. Zhao, and D. Tao.<br>
-        In <a href="https://nips.cc/"> NeurIPS</a>, 2020.
-        </p></li>
-        <li><p>
-        Short-Term and Long-Term Context Aggregation Network for Video Inpainting. [<A HREF="https://arxiv.org/abs/2009.05721">PDF</A>] <br>
-        A. Li, S. Zhao, X. Ma, <b>M. Gong</b>, J. Qi, R. Zhang, D. Tao, and R. Kotagiri.<br>
-        In <a href="https://eccv2020.eu/"> ECCV</a>, 2020. (<font color="red">Spotlight</font>)
-        </p></li>
-        <li><p>
-        Sub-center ArcFace: Boosting Face Recognition by Large-scale Noisy Web Faces. [<A HREF="https://ibug.doc.ic.ac.uk/media/uploads/documents/eccv_1445.pdf">PDF</A>][<A HREF="https://github.com/deepinsight/insightface/tree/master/recognition/subcenter_arcface">CODE</A>]<br>
-        J. Deng, J. Guo, T. Liu, <b>M. Gong</b>, and S Zafeiriou.<br>
-        In <a href="https://eccv2020.eu/"> ECCV</a>, 2020.
-        </p></li>
-        <li><p>
-        Label-Noise Robust Domain Adaptation. [<A HREF="https://proceedings.icml.cc/static/paper_files/icml/2020/1942-Paper.pdf">PDF</A>]<br>
-        X. Yu, T. Liu, <b>M. Gong</b>, K. Zhang, K. Batmanghelich, and D. Tao.<br>
-        In <a href="https://icml.cc/"> ICML</a>, 2020.
-        </p></li>
-        <li><p>
-        LTF: A Label Transformation Framework for Correcting Target Shift. [<A HREF="https://proceedings.icml.cc/static/paper_files/icml/2020/1262-Paper.pdf">PDF</A>][<A HREF="https://github.com/CR-Gjx/LTF-Label-Transformation-Framework">CODE</A>] <br>
-        J. Guo, <b>M. Gong</b>, T. Liu, K. Zhang, and D. Tao.<br>
-        In <a href="https://icml.cc/"> ICML</a>, 2020.
-        </p></li>
-        <li><p>
-        Compressed Self-Attention for Deep Metric Learning with Low-Rank Approximation. [<A HREF="https://www.ijcai.org/proceedings/2020/0285.pdf">PDF</A>]<br>
-        Z. Chen, <b>M. Gong*</b>, L. Ge, B. Du*.<br>
-        In <a href="https://ijcai20.org/"> IJCAI</a>, 2020.        
-        </p></li>
-        <li><p>
-        Causal Discovery from Non-Identical Variable Sets. [<A HREF="https://www.aaai.org/Papers/AAAI/2020GB/AAAI-HuangB.6175.pdf">PDF</A>]<br>
-        B. Huang, K. Zhang, <b>M. Gong</b>, and C. Glymour.<br>
-        In <a href="http://www.aaai.org/Conferences/AAAI/aaai20.php"> AAAI</a>, 2020.        
-        </p></li>
-        <li><p>
-        Generative-Discriminative Complementary Learning. [<A HREF="https://arxiv.org/abs/1904.01612">PDF</A>][<A HREF="https://github.com/xuyanwu/Complementary-GAN">CODE</A>]<br>
-        Y. Xu*, <b>M. Gong*</b>, J. Chen, T. Liu, K. Zhang, and K. Batmanghelich.<br>
-        In <a href="http://www.aaai.org/Conferences/AAAI/aaai20.php"> AAAI</a>, 2020.        
-        </p></li>
-        <li><p>
-        Compressed Self-Attention for Deep Metric Learning. [<A HREF="https://aaai.org/Papers/AAAI/2020GB/AAAI-ChenZ.5756.pdf">PDF</A>]<br>
-        Z. Chen, <b>M. Gong</b>, Y. Xu, C. Wang, K. Zhang, B. Du.<br>
-        In <a href="http://www.aaai.org/Conferences/AAAI/aaai20.php"> AAAI</a>, 2020.        
-        </p></li>
-        <li><p>
-        Twin Auxiliary Classifiers GAN. [<A HREF="https://arxiv.org/abs/1907.02690">PDF</A>][<A HREF="https://github.com/batmanlab/twin_ac">CODE</A>]<br>
-        <b>M. Gong*</b>, Y. Xu*, C. Li, K. Zhang, and K. Batmanghelich.<br>
-        In <a href="https://nips.cc/Conferences/2019">NeurIPS</a></i>, 2019. (<font color="red">Spotlight, acceptance rate 2.4%</font>)
-        </p></li>
-        <li><p>
-        Likelihood-Free Overcomplete ICA and Applications in Causal Discovery. [<A HREF="https://papers.nips.cc/paper/8912-likelihood-free-overcomplete-ica-and-applications-in-causal-discovery.pdf">PDF</A>][<A HREF="https://github.com/dingchenwei/Likelihood-free_OICA">CODE</A>] <br>
-        C. Ding, <b>M. Gong</b>, K. Zhang, and D. Tao.<br>
-        In <a href="https://nips.cc/Conferences/2019">NeurIPS</a></i>, 2019. (<font color="red">Spotlight, acceptance rate 2.4%</font>)
-        </p></li>
-        <li><p>
-        Specific and Shared Causal Relation Modeling and Mechanism-based Clustering. [<A HREF="https://papers.nips.cc/paper/9506-specific-and-shared-causal-relation-modeling-and-mechanism-based-clustering.pdf">PDF</A>]<br>
-        B. Huang, K. Zhang, P. Xie, <b>M. Gong</b>, E. P. Xing, and C. Glymour.<br>
-        In <a href="https://nips.cc/Conferences/2019">NeurIPS</a></i>, 2019.
-        </p></li>
-        <li><p>
-        Discovery and Forecasting in Nonstationary Environments with State-Space Models. [<A HREF="http://proceedings.mlr.press/v97/huang19g/huang19g.pdf">PDF</A>][<A HREF="http://proceedings.mlr.press/v97/huang19g/huang19g-supp.pdf">SUPP</A>][<A HREF="https://github.com/Biwei-Huang/Causal-discovery-and-forecasting-in-nonstationary-environments">CODE</A>]<br>
-        B. Huang, K. Zhang, <b>M. Gong</b>, and C. Glymour.<br>
-        In <a href="https://icml.cc/Conferences/2019">ICML</a></i>, 2019.
-        </p></li>
-        <li><p>
-        Geometry-Consistent Adversarial Networks for Unsupervised Domain Mapping. [<A HREF="https://arxiv.org/abs/1809.05852">PDF</A>][<A HREF="https://github.com/hufu6371/GcGAN">CODE</A>]<br>
-        H. Fu*, <b>M. Gong*</b>, C. Wang, K. Batmanghelich, K. Zhang, and D. Tao.<br>
-        In <a href="http://cvpr2019.thecvf.com/">CVPR</a></i>, 2019. (<font color="red">best paper finalist, top 1%</font>)<br>
-        </p></li>  
-        <li><p>
-        Geometry-Aware Symmetric Domain Adaptation for Monocular Depth Estimation. [<A HREF="https://arxiv.org/pdf/1904.01870">PDF</A>][<A HREF="https://github.com/sshan-zhao/GASDA">CODE</A>]<br>
-        S. Zhao, H. Fu, <b>M. Gong</b>, and D. Tao.<br>
-        In <a href="http://cvpr2019.thecvf.com/">CVPR</a></i>, 2019. <br>
-        </p></li>
-        <li><p>
-        Low-Dimensional Density Ratio Estimation for Covariate Shift Correction. [<A HREF="http://proceedings.mlr.press/v89/stojanov19a/stojanov19a.pdf">PDF</A>]<br>
-        P. Stojanov, <b>M. Gong</b>, J. G. Carbonell, and K. Zhang.<br>
-        In <a href="https://www.aistats.org/aistats2019/">AISTATS</a></i>, 2019. <br>
-        </p></li>
-        <li><p>
-        Data-Driven Approach to Multiple-Source Domain Adaptation. [<A HREF="http://proceedings.mlr.press/v89/stojanov19b/stojanov19b.pdf">PDF</A>]<br>
-        P. Stojanov, <b>M. Gong</b>, J. G. Carbonell, and K. Zhang.<br>
-        In <a href="https://www.aistats.org/aistats2019/">AISTATS</a></i>, 2019. <br>
-        </p></li>
-        <li><p>
-        Modeling Dynamic Missingness of Implicit Feedback for Recommendation. [<A HREF="https://papers.nips.cc/paper/7901-modeling-dynamic-missingness-of-implicit-feedback-for-recommendation.pdf">PDF</A>] <br>
-        M. Wang, <b>M. Gong</b>, X. Zheng, and K. Zhang.<br>
-        In <a href="https://nips.cc/Conferences/2018">NeurIPS</a></i>, 2018.
-        </p></li>
-        <li><p>
-        Causal Discovery with Linear Non-Gaussian Models under Measurement Error: Structural Identifiability Results. [<A HREF="http://auai.org/uai2018/proceedings/papers/372.pdf">PDF</A>]<br>
-        K. Zhang, <b>M. Gong</b>, J. Ramsey, K. Batmanghelich, P. Spirtes, and C. Glymour.<br>
-        In <a href="http://auai.org/uai2018/">UAI</a></i>, 2018. (<font color="red">Oral, acceptance rate 8.9%</font>)
-        </p></li>
-        <li><p>
-        Generative-Discriminative Approach from a Bag of Image Patches to a Vector. [<A HREF="https://arxiv.org/pdf/1806.11217.pdf">PDF</A>]<br>
-        S. Singla, <b>M. Gong</b>, S. Ravanbakhsh, B. Poczos, and K. Batmanghelich.<br>
-        In <a href="https://link.springer.com/book/10.1007/978-3-030-00928-1"> MICCAI</a>, 2018.
-        </p></li>
-        <li><p>
-        Learning with Biased Complementary Labels. [<A HREF="http://openaccess.thecvf.com/content_ECCV_2018/papers/Xiyu_Yu_Learning_with_Biased_ECCV_2018_paper.pdf">PDF</A>]<br>
-        X. Yu, T. Liu, <b>M. Gong</b>, and D. Tao. <br>
-        In <a href="https://eccv2018.org/"> ECCV</a>, 2018. (<font color="red">Oral, acceptance rate 2.4%</font>)   
-        </p></li> 
-        <li><p>
-        Correcting the Triplet Selection Bias for Triplet Loss. [<A HREF="http://openaccess.thecvf.com/content_ECCV_2018/papers/Baosheng_Yu_Correcting_the_Triplet_ECCV_2018_paper.pdf">PDF</A>][<A HREF="https://tongliang-liu.github.io/code/Xiyu_eccv2018_backup.tar.gz">CODE</A>]<br>
-        B. Yu, T. Liu, <b>M. Gong</b>, C. Ding, and D. Tao. <br>
-        In <a href="https://eccv2018.org/"> ECCV</a>, 2018.
-        </p></li>
-        <li><p>
-        Deep Domain Generalization via Conditional Invariant Adversarial Networks. [<A HREF="http://openaccess.thecvf.com/content_ECCV_2018/papers/Ya_Li_Deep_Domain_Generalization_ECCV_2018_paper.pdf">PDF</A>][<A HREF="http://staff.ustc.edu.cn/~xinmei/publications_pdf/2018/code-YaLi.zip">CODE</A>] <br>
-        Y. Li, X. Tian, <b>M. Gong</b>, Y. Liu, T. Liu, K. Zhang, and D. Tao. <br>
-        In <a href="https://eccv2018.org/"> ECCV</a>, 2018.
-        </p></li>
-        <li><p>
-        Deep Ordinal Regression Network for Monocular Depth Estimation. [<A HREF="https://hal.archives-ouvertes.fr/hal-01741163/file/CVPR18_DepthEstimation.pdf">PDF</A>][<A HREF="https://github.com/hufu6371/DORN">CODE</A>]<br>
-        H. Fu, <b>M. Gong</b>, C. Wang, K. Batmanghelich, and D. Tao. <br>
-        In <a href="http://cvpr2018.thecvf.com/">CVPR</a></i>, 2018.<br>
-        <font color="red">This algorithm won the 1st prize in single image depth prediction competition, <a target="_blank" href="http://www.robustvision.net/leaderboard.php?benchmark=depth">Robust Vision Challenge 2018</a>.</font>
-        </p></li>
-        <li><p>
-        An Efficient and Provable Approach for Mixture Proportion Estimation Using Linear Independence Assumption. [<A HREF="http://openaccess.thecvf.com/content_cvpr_2018/papers/Yu_An_Efficient_and_CVPR_2018_paper.pdf">PDF</A>][<A HREF="https://tongliang-liu.github.io/code/cvpr18_backup.zip">CODE</A>]<br>
-        X. Yu, T. Liu, <b>M. Gong</b>, K. Batmanghelich, and D. Tao. <br>
-        In <a href="http://cvpr2018.thecvf.com/">CVPR</a></i>, 2018.
-        </p></li>
-        <li><p>
-        Domain Generalization via Conditional Invariant Representations. [<A HREF="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16595/16558">PDF</A>][<A HREF="papers/CIDG.zip">CODE</A>]<br>
-        Y. Li, <b> M. Gong</b>, X. Tian, T. Liu, and D. Tao. <br>
-        In <a href="http://www.aaai.org/Conferences/AAAI/aaai18.php"> AAAI</a>, 2018 (<font color="red">Oral, acceptance rate 11.0%</font>)  
-        </p></li>
-        <li><p>
-        Causal Discovery from Temporally Aggregated Time Series. [<A HREF="papers/UAI_CDTA.pdf">PDF</A>]<br>
-        <b>M. Gong</b>, K. Zhang, B. Schölkopf, C. Glymour, and D. Tao.<br>
-        In <a href="http://auai.org/uai2017/">UAI</a></i>, 2017.
-        </p></li>
-        <li><p>
-        A Coarse-Fine Network for Keypoint Localization. [<A HREF="http://openaccess.thecvf.com/content_ICCV_2017/papers/Huang_A_Coarse-Fine_Network_ICCV_2017_paper.pdf">PDF</A>]<br>
-        S. Huang, <b>M. Gong</b>, and D. Tao.<br>
-        In <a href="http://iccv2017.thecvf.com/">ICCV</a></i>, 2017. (<font color="red">Spotlight, acceptance rate 2.6%</font>)
-        </p></li>
-        <li><p>
-        Domain Adaptation with Conditional Transferable Components. [<A HREF="papers/ICML_CTC.pdf">PDF</A>][<A HREF="papers/CTC.zip">CODE</A>]<br>
-        <b>M. Gong</b>, K. Zhang, T. Liu, D. Tao, C. Glymour, and B. Schölkopf.<br>
-        In <a href="https://icml.cc/2016/index.html">ICML</a></i>, 2016.     
-        </p></li> 
-        <li><p>
-        Causal Inference by Identification of Vector Autoregressive Processes with Hidden Components. [<A HREF="https://arxiv.org/pdf/1411.3972.pdf">PDF</A>][<A HREF="http://pgeiger.org/dl/software/CLH.zip">CODE</A>]<br>
-        P. Geiger, K. Zhang, <b> M. Gong</b>, B. Schölkopf, and D. Janzing.<br>
-        In <a href="https://icml.cc/2015/index.html">ICML</a></i>, 2015.     
-        <li><p>
-        Discovering Temporal Causal Relations from Subsampled Data. [<A HREF="papers/ICML_SUBSAMPLE.pdf">PDF</A>][<A HREF="papers/CRSD.zip">CODE</A>] <br>
-        <b>M. Gong</b>*, K. Zhang*, B. Schölkopf, D. Tao, and P. Geiger.<br>
-        In <a href="https://icml.cc/2015/index.html">ICML</a></i>, 2015.     
-        </p></li>
-        <li><p>
-        Multi-Source Domain Adaptation: A Causal View. [<A HREF="papers/AAAI_MULTI.pdf">PDF</A>][<A HREF="papers/MDAC.zip">CODE</A>]<br>
-        K. Zhang, <b>M. Gong</b>, and B. Schölkopf.<br>
-        In <a href="https://www.aaai.org/Press/Proceedings/aaai15.php">AAAI</a></i>, 2015.     
-        </p></li>
-    </ol>
-</div>
-    <div>
-        <h2><hr><a name="Journal"></a>Journal</h2>
-        <ol reversed>
-            <li><p>
-            Video Joint Modelling Based on Hierarchical Transformer for Co-summarization. [<A HREF="https://ieeexplore.ieee.org/abstract/document/9808180">PDF</A>]<br>
-            H. Li, Q. Ke, <b>M. Gong</b>, Rui Zhang.<br>
-            <i><a target="_blank" href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34">IEEE T-PAMI,</a></i> to appear (2022).   
-            </p></li>
-            <li><p>
-            Learning Multi-level Weight-centric Features for Few-shot Learning. [<A HREF="https://arxiv.org/pdf/1911.12476.pdf">PDF</A>]<br>
-            M. Liang, S. Huang, S. Pan, <b>M. Gong</b>, W. Liu.<br>
-            <i><a target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S0031320318302541">Pattern Recognition,</a></i> to appear (2022).   
-            </p></li>
-            <li><p>
-            Deep Learning is Singular, and That's Good. [<A HREF="https://arxiv.org/abs/2010.11560">PDF</A>]<br>
-            S. Wei, D. Murfet, <b>M. Gong</b>, H. Li, J. Gell-Redman, T. Quella.<br>
-            <i><a target="_blank" href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE T-NNLS,</a></i>, to appear (2022).   
-            </p></li>
-            <li><p>
-            Uncertainty-aware clustering for unsupervised domain adaptive object re-identification. [<A HREF="https://arxiv.org/pdf/2108.09682.pdf">PDF</A>][<A HREF="https://github.com/Wang-pengfei/UCF">CODE</A>]<br>
-            P. Wang, C. Ding, W. Tan, <b>M. Gong</b>, K. Jia, D. Tao.<br>
-            <i><a target="_blank" href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046">IEEE T-MM,</a></i> to appear (2022).   
-            </p></li>
-             <li><p>
-            A Unified B-Spline Framework for Scale-Invariant Keypoint Detection. [<A HREF="https://link.springer.com/article/10.1007/s11263-021-01568-3">PDF</A>][<A HREF="https://github.com/qizhust/UBsplines">CODE</A>] <br>
-            Q. Zheng, <b>M. Gong</b>, X. You, and D. Tao.<br>
-            <i><a target="_blank" href="https://www.springer.com/journal/11263">IJCV,</a></i> (2022).  
-            </p></li>
-            <li><p>
-            3D-FUTURE: 3D Furniture shape with TextURE. [<A HREF="https://arxiv.org/abs/2009.09633">PDF</A>]<br>
-            H. Fu, R. Jia, L. Gao, <b>M. Gong</b>, B. Zhao, S. Maybank, and D. Tao.<br>
-            <i><a target="_blank" href="https://www.springer.com/journal/11263">IJCV,</a></i> 129(12), 3313-3337 (2021).  
-            </p></li>
-            <li><p>
-            Adaptive Context-Aware Multi-Modal Network for Depth Completion. [<A HREF="https://arxiv.org/abs/2008.10833">PDF</A>] <br>
-            S. Zhao, <b>M. Gong</b>, H. Fu, D. Tao. <br>
-            <i><a target="_blank" href="http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=83">IEEE T-IP,</a></i> 30, 5264-5276 (2021).  
-            </p></li>
-            <li><p>
-            HRSiam: High-Resolution Siamese Network, Towards Space-Borne Satellite Video Tracking. [<A HREF="https://ieeexplore.ieee.org/document/9350236">PDF</A>] <br>
-            J. Shao, B. Du, C. Wu, <b>M. Gong</b>, T. Liu. <br>
-            <i><a target="_blank" href="http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=83">IEEE T-IP,</a></i> 30, 3056-3068 (2021).  
-            </p></li>
-            <li><p>
-            Dynamic Joint Distribution Alignment Network for Bearing Fault Diagnosis Under Variable Working Conditions. [<A HREF="https://ieeexplore.ieee.org/document/9343309">PDF</A>] <br>
-            C. Shen, X. Wang, D. Wang, Y Li, J. Zhu, <b>M. Gong</b>.<br>
-            <i><a target="_blank" href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19">IEEE T-IM,</a></i> 70 (2021).  
-            </p></li>
-            <li><p>
-            Unpaired Data Empowers Association Tests. [<A HREF="https://academic.oup.com/bioinformatics/article/37/6/785/5929693">PDF</A>] <br>
-            <b>M. Gong</b>, P. Liu, F. C. Sciurba, P. Stojanov, D. Tao, G. C. Tseng, K. Zhang, K. Batmanghelich. <br>
-            <i><a target="_blank" href="https://academic.oup.com/bioinformatics">Bioinformatics,</a></i> 37, 785-792 (2021).  
-            </p></li>
-            <li><p>
-            LogDet Metric-Based Domain Adaptation. [<A HREF="https://ieeexplore.ieee.org/document/8956072">PDF</A>]<br>
-            Y. Liu, B. Du, W. Tu, <b>M. Gong</b>, Y. Guo, and D. Tao. <br>
-            <i><a target="_blank" href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE T-NNLS,</a></i> 2129-2142 (2020).  
-            </p></li>
-            <li><p>
-            Learning the Implicit Strain Reconstruction in Ultrasound Elastography using Privileged Information. [<A HREF="https://www.sciencedirect.com/science/article/abs/pii/S1361841519300672">PDF</A>]<br>
-            Z. Gao, S. Wu, Z. Liu, J. Luo, H. Zhang, <b>M. Gong</b>, and S. Li.<br>
-            <i><a target="_blank" href="https://www.journals.elsevier.com/medical-image-analysis">Medical Image Analysis,</a></i> 58, (2019).
-            </p></li>
-            <li><p>
-            Receptive Field Size Versus Model Depth for Single Image Super-Resolution. [<A HREF="https://ieeexplore.ieee.org/document/8848837">PDF</A>]<br>
-            R. Wang, <b>M. Gong</b>, D. Tao. <br>
-            <i> <a target="_blank" href="http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=83">IEEE T-IP,</a></i> 29: 1669-1682 (2019).
-            </p></li>
-            <li><p>
-            MoE-SPNet: A mixture-of-experts scene parsing network. [<A HREF="http://ieeexplore.ieee.org/document/7492255/">PDF</A>]<br>
-            F. Hu, <b>M. Gong</b>, C. Wang, and D. Tao.<br>
-            <i><a target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S0031320318302541">Pattern Recognition,</a></i> 84: 226-236 (2018).   
-            </p></li>
-            <li><p>
-            Large Cone Non-negative Matrix Factorization. [<A HREF="http://ieeexplore.ieee.org/document/7492255/">PDF</A>]<br>
-            T. Liu, <b>M. Gong</b>, and D. Tao.<br>
-            <i><a target="_blank" href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE T-NNLS,</a></i> 28(9): 2129-2142 (2017).   
-            </p></li>
-            <li><p>
-            DERF: Distinctive Efficient Robust Features From the Biological Modeling of the P Ganglion Cells. [<A HREF="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=7055913">PDF</A>]<br>
-            D. Weng, Y. Wang, <b>M. Gong</b>, D. Tao, H. Wei, and D. Huang.<br>
-            <i><a target="_blank" href="http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=83">IEEE T-IP,</a></i> 24(8): 2287-2302 (2015).
-            </p></li>
-        </ol>
-    </div>
+
+
+        <span style="font-size: 22;">
+         Sorted <a id="load_years">by years</a>, <a id="load_topics">by topics</a>.
+        </span>
+
+        <div id="includedContent">
+
+
+        </div>
+    </div>       
+
+
+
+
+
 </td>
 </tr>
 </table>
