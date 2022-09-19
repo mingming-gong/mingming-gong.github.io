@@ -42,7 +42,10 @@
         Causal discovery from nonstationary data [<A HREF="http://proceedings.mlr.press/v97/huang19g/huang19g.pdf">ICML'19</A>]
         </p></li>
         <li><p>
-        Causal discovery from data with measurement error/missing values [<A HREF="http://auai.org/uai2018/proceedings/papers/372.pdf">UAI'18</A>][<A HREF="https://www.aaai.org/Papers/AAAI/2020GB/AAAI-HuangB.6175.pdf">AAAI'20</A>]
+        Causal discovery from data with measurement error [<A HREF="http://auai.org/uai2018/proceedings/papers/372.pdf">UAI'18</A>]
+        </p></li>
+        <li><p>
+        Causal discovery from data with missing values [<A HREF="https://www.aaai.org/Papers/AAAI/2020GB/AAAI-HuangB.6175.pdf">AAAI'20</A>][<A HREF="https://arxiv.org/pdf/2205.13869.pdf">NeurIPS'22</A>]
         </p></li>
         </ul>
         <br>
@@ -52,24 +55,28 @@
 </div>
 
 <div>
-    <h2><hr>Transfer Learning</h2>
+    <h2><hr>Causal Machine Learning</h2>
             <img src="DA.jpg" align="right" border="0" width=350/>
-Transfer learning is a research problem that focuses on utilizing previously gained knowledge to solve new problems. For example, when trying to recognize an object at night, we humans can transfer the knowledge gained when learning to recognize the object during the day. We are working on exploiting causal generative
-    process of the data to develop novel machine learning models that can adapt/generalize to new data distributions. In the context of image data, we are interested in unsupervised learning models to translate images into different styles.<br>
+Current machine learning are mostly driven by statistical correlations. However, relying on pure statisitical correlations makes machine learning models hard to generalize to new domains and tasks. Some argue that this requires learning not only the statistical correlations, but also the causal generative process behind the data. We are exploring causal systems' properties and how they could benefit knowledge transfer in machine learning. In addition, we are interested in improving the fairness, robustness, and interpretability of machine learning models from a causal perspective. 
     <br> 
     
     <ul>
     <li><p>
-    Domain adaptation/generalization from a causal perspective [<A HREF="papers/AAAI_MULTI.pdf">AAAI'15</A>][<A HREF="papers/ICML_CTC.pdf">ICML'16</A>][<A HREF="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16595/16558">AAAI'18</A>][<A HREF="http://openaccess.thecvf.com/content_ECCV_2018/papers/Ya_Li_Deep_Domain_Generalization_ECCV_2018_paper.pdf">ECCV'18</A>]
+    Domain adaptation/generalization [<A HREF="papers/AAAI_MULTI.pdf">AAAI'15</A>][<A HREF="papers/ICML_CTC.pdf">ICML'16</A>][<A HREF="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16595/16558">AAAI'18</A>][<A HREF="http://openaccess.thecvf.com/content_ECCV_2018/papers/Ya_Li_Deep_Domain_Generalization_ECCV_2018_paper.pdf">ECCV'18</A>]
     [<A HREF="http://proceedings.mlr.press/v89/stojanov19b/stojanov19b.pdf">AISTATS'19</A>][<A HREF="https://proceedings.icml.cc/static/paper_files/icml/2020/1262-Paper.pdf">ICML'20</A>][<A HREF="https://proceedings.icml.cc/static/paper_files/icml/2020/1942-Paper.pdf">ICML'20</A>] 
 [<A HREF="https://papers.nips.cc/paper/2020/file/b98249b38337c5088bbc660d8f872d6a-Paper.pdf">NeurIPS'20</A>][<A HREF="https://arxiv.org/abs/2002.03278">NeurIPS'20</A>][<A HREF="https://openreview.net/forum?id=zdmF437BCB">NeurIPS'21</A>]
      </p></li>
-        
+    <li><p> 
+    Fairness in machine learning [<A HREF="https://openreview.net/forum?id=s-pcpETLpY">CLeaR'22</A>][<A HREF="https://arxiv.org/pdf/2205.13972">NeurIPS'22</A>]      
+    </p></li>
+    <li><p> 
+    Robust machine learning [<A HREF="https://arxiv.org/abs/2109.02986">NeurIPS'21</A>][<A HREF="https://openreview.net/forum?id=cZAi1yWpiXQ">ICLR'22</A>]     
+    </p></li>   
     <li><p> 
     Generalization in reinforcement learning [<A HREF="https://openreview.net/forum?id=YRq0ZUnzKoZ">ICLR'22</A>]    
     </p></li>
     <li><p>
-    Unsupervised image-to-image translation [<A HREF="https://arxiv.org/abs/1809.05852">CVPR'19</A>][<A HREF="https://arxiv.org/pdf/1904.01870">CVPR'19</A>][<A HREF="https://arxiv.org/abs/2109.11736">ICCV'21</A>]
+    Unsupervised image-to-image translation [<A HREF="https://arxiv.org/abs/2109.11736">ICCV'21</A>]
     </p></li>
     </ul>
     <br>
@@ -81,7 +88,7 @@ Transfer learning is a research problem that focuses on utilizing previously gai
     <h2><hr>3D Computer Vision</h2>
             <img src="3D.png" align="right" border="0" width=350/>
 
-    3D computer vision aims to model and understand the visual world by using 3D visual information. We are interested in deep learning methods for depth estimation, 3D reconstruction, 3D model retrieval, etc. Because the current deep learning-based methods can hardly generalize to new environment, one of our research goal is to develop new deep models that can generalize across different scenarios.
+    3D computer vision aims to model and understand the visual world by inferring 3D structures from 2D images. We are interested in deep learning methods for depth estimation, 3D reconstruction, 3D model retrieval, etc. In addition, we are leveraging the causal process from the 3D world to 2D images to improve the generalization of 3D reconstruction models.
     <br>
     <br>
 
